@@ -1,0 +1,15 @@
+/* #app-cajero {
+    background-color: gold;
+} */
+
+body {
+    background-color: cadetblue;
+}
+
+.container {
+    background-color: beige;
+}
+
+#titulo {
+    font-family: 'Angkor', cursive;
+}
