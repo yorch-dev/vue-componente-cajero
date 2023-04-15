@@ -174,5 +174,23 @@ export default {
         <div class="alert alert-success mt-3 mx-auto" role="alert" v-if="mostrar_mensaje_exito">
             {{ mensaje }}
         </div>
+        <h6>Clientes:</h6>
+
+        <table class="table table-sm table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#Id cliente</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Saldo</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr v-for="{ id, clave, saldo } = cliente in this.clientes">
+                    <th scope="col"> {{ id }} </th>
+                    <th scope="col"> {{ clave }} </th>
+                    <th scope="col"> {{ saldo }} </th>
+                </tr>
+            </tbody>
+        </table>
     `,
 }
