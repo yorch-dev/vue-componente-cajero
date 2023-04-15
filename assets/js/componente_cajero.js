@@ -188,7 +188,7 @@ export default {
                 <tr v-for="{ id, clave, saldo } = cliente in this.clientes">
                     <th scope="col"> {{ id }} </th>
                     <th scope="col"> {{ clave }} </th>
-                    <th scope="col"> {{ saldo }} </th>
+                    <th scope="col"> {{ formato_moneda(saldo) }} </th>
                 </tr>
             </tbody>
         </table>
